@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #000000, #1e1a78);
+    color: white;
+    height: 100vh;
+}
+
+/* ส่วนหัวเมนู */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: transparent;
+}
+
+header .logo {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #a6a6ff;
+}
+
+.profile-icon {
+    font-size: 1.5em;
+}
+
+/* ส่วนกลาง (Hero Section) */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.intro {
+    max-width: 400px;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.intro .subtext {
+    font-size: 1em;
+    color: #d1d1ff;
+}
+
+/* รูปโปรไฟล์ */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.05);
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+</style>
+
+</head>
+<body>
+    <header>
+        <div class="logo"></div>
+        <nav>
+            <a href="#">หน้าหลัก</a>
+            <a href="#">ประวัติการศึกษา</a>
+            <a href="#">ประสบการณ์ทำงาน</a>
+            <a href="#">ผลงาน</a>
+            <a href="#">ช่องทางการติดต่อ</a>
+        </nav>
+        <div class="profile-icon">👤</div>
+    </header>
+
+    <section class="hero">
+        <div class="intro">
+            <p>สวัสดี, ฉัน</p>
+            <h1>Jeff<br>Big"D"</h1>
+            <p class="subtext">นักพัฒนาเว็บไซต์หรือนักออกแบบในฝันของคุณ</p>
+        </div>
+        <div class="profile-pic">
+            <img src="Image/tsushima.jpg" alt="Profile Picture">
+        </div>
+    </section>
+</body>
+</html>

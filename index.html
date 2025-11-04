@@ -1,41 +1,160 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ประวัติการศึกษา</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติการศึกษา</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Prompt", sans-serif;
+            background-color: #000000;
+            color: white;
+        }
+
+        nav {
+             background: linear-gradient(to right, #000000, #1e1e60, #0d47a1);;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+        }
+
+        nav .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00c6ff;
+        }
+
+        /* ส่วนของเนื้อหาหลักแต่ละช่วง */
+        section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 40px;
+            margin-top: 10%;
+            min-height: 80vh;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+             background: linear-gradient(to right, #000000, #1e1e60, #0d47a1);
+        }
+
+        .profile {
+            flex: 1;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 220px;
+            opacity: 0.5;
+        }
+
+        .education {
+            flex: 2;
+            padding: 40px;
+        }
+
+        .education h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .education p {
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        /* เวอร์ชันสลับด้านสำหรับแต่ละช่วง */
+        .reverse {
+            flex-direction: row-reverse;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education {
+                padding: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <section class="education-section">
-    <h1>🎓 ประวัติการศึกษา</h1>
 
-    <div class="edu-card">
-      <h2>มัธยมศึกษา</h2>
-      <p>โรงเรียนตัวอย่างวิทยาคม</p>
-      <p>ปีการศึกษา: 2556 - 2558</p>
-      <p>แผนการเรียน: วิทย์ - คณิต</p>
-    </div>
+    <!-- เมนูด้านบน -->
+    <nav>
+        <div class="logo">Name</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">ประวัติการศึกษา</a></li>
+            <li><a href="#">ประสบการณ์การทำงาน</a></li>
+            <li><a href="#">ผลงาน</a></li>
+            <li><a href="#">ข้อมูลการติดต่อ</a></li>
+        </ul>
+    </nav>
 
-    <div class="edu-card">
-      <h2>ปริญญาตรี</h2>
-      <p>มหาวิทยาลัยเทคโนโลยีตัวอย่าง</p>
-      <p>ปีการศึกษา: 2559 - 2563</p>
-      <p>คณะเทคโนโลยีสารสนเทศ สาขาวิทยาการคอมพิวเตอร์</p>
-    </div>
+    <!-- ประวัติการศึกษา 1 -->
+    <section>
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile silhouette">
+        </div>
+        <div class="education">
+            <h1>ประวัติการศึกษา 1</h1>
+            <p>
+                2020 - 2022 จบระดับชั้นมัธยมศึกษาปีที่ 3  
+                โรงเรียนเทศบาลชนะชัยศรี อ.อรัญประเทศ จ.สระแก้ว
+            </p>
+        </div>
+    </section>
 
-    <div class="edu-card">
-      <h2>ปริญญาโท</h2>
-      <p>มหาวิทยาลัยตัวอย่างนานาชาติ</p>
-      <p>ปีการศึกษา: 2564 - 2566</p>
-      <p>สาขาวิศวกรรมซอฟต์แวร์</p>
-    </div>
+    <!-- ประวัติการศึกษา 2 (สลับด้าน) -->
+    <section class="reverse">
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile silhouette">
+        </div>
+        <div class="education">
+            <h1>ประวัติการศึกษา 2</h1>
+            <p>
+                2022 - 2023 จบระดับชั้นปวช.3 แผนกช่างก่อสร้าง วิทยาลัยเทคนิคสระแก้ว
+            </p>
+        </div>
+    </section>
 
-    <div class="nav-links">
-      <a href="index.html" class="btn">⬅ กลับหน้าแรก</a>
-      <a href="work1.html" class="btn">ดูประวัติการทำงาน ➜</a>
-    </div>
-  </section>
+    <!-- ประวัติการศึกษา 3 -->
+    <section>
+        <div class="profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="profile silhouette">
+        </div>
+        <div class="education">
+            <h1>ประวัติการศึกษา 3</h1>
+            <p>
+                2023 - 2025 จบระดับชั้นปวช.3 แผนกช่างก่อสร้าง วิทยาลัยเทคนิคสระแก้ว
+            </p>
+        </div>
+    </section>
+
 </body>
 </html>
-

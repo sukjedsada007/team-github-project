@@ -3,114 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>หน้าหลัก</title>
     <link rel="stylesheet" href="style.css">
 
 <style>
     * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Prompt', sans-serif;
-}
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+    }
 
-body {
-    background: linear-gradient(90deg, #000000, #1e1a78);
-    color: white;
-    height: 100vh;
-}
+     body {
+            margin: 0;
+            font-family: "Prompt", sans-serif;
+            background: linear-gradient(to right, #000000, #1e1e60, #0d47a1);
+            color: white;
+        }
 
-/* ส่วนหัวเมนู */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: transparent;
-}
+    /* ส่วนหัวเมนู */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background: transparent;
+        margin-top: 10%;
+    }
 
-header .logo {
-    font-size: 1.3em;
-    font-weight: bold;
-}
+    header .logo {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 1em;
-    transition: 0.3s;
-}
+    nav {
+                background: linear-gradient(to right, #000000, #1e1e60, #0d47a1);;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px 40px;
+            }
 
-nav a:hover {
-    color: #a6a6ff;
-}
+            nav .logo {
+                font-size: 20px;
+                font-weight: bold;
+            }
 
-.profile-icon {
-    font-size: 1.5em;
-}
+            nav ul {
+                list-style: none;
+                display: flex;
+                margin-left: 50%;
+                padding: 0;
+            }
 
-/* ส่วนกลาง (Hero Section) */
-.hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-    padding-top: 60px;
-}
+            nav ul li {
+                margin-left: 30px;
+            }
 
-.intro {
-    max-width: 400px;
-}
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                transition: color 0.3s;
+            }
 
-.intro h1 {
-    font-size: 2.5em;
-    line-height: 1.2;
-    margin: 10px 0;
-}
+            nav ul li a:hover {
+                color: #00c6ff;
+            }
 
-.intro .subtext {
-    font-size: 1em;
-    color: #d1d1ff;
-}
+    /* ส่วนกลาง (Hero Section) */
+    .hero {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        padding-top: 60px;
+    }
 
-/* รูปโปรไฟล์ */
-.profile-pic {
-    width: 250px;
-    height: 250px;
-    border: 2px solid #888;
-    border-radius: 50%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255,255,255,0.05);
-}
+    .intro {
+        max-width: 400px;
+    }
 
-.profile-pic img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+    .intro h1 {
+        font-size: 2.5em;
+        line-height: 1.2;
+        margin: 10px 0;
+    }
 
-</style>
+    .intro .subtext {
+        font-size: 1em;
+        color: #d1d1ff;
+    }
 
-</head>
-<body>
-    <header>
-        <div class="logo"></div>
+    /* รูปโปรไฟล์ */
+    .profile-pic {
+        width: 250px;
+        height: 250px;
+        border: 2px solid #888;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255,255,255,0.05);
+    }
+
+    .profile-pic img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    </style>
+
+    </head>
+    <body>
         <nav>
-            <a href="#">หน้าหลัก</a>
-            <a href="#">ประวัติการศึกษา</a>
-            <a href="#">ประสบการณ์ทำงาน</a>
-            <a href="#">ผลงาน</a>
-            <a href="#">ช่องทางการติดต่อ</a>
-        </nav>
-        <div class="profile-icon">👤</div>
-    </header>
+        <div class="logo">Name</div>
+        <ul>
+            <li><a href="TRUEINDEX.html">หน้าหลัก</a></li>
+            <li><a href="index.html">ประวัติการศึกษา</a></li>
+            <li><a href="#">ประสบการณ์การทำงาน</a></li>
+            <li><a href="#">ผลงาน</a></li>
+            <li><a href="#">ข้อมูลการติดต่อ</a></li>
+        </ul>
+        <a href="login.html" target="_blank"  style="background-color: #000000; border-radius: 50%; text-decoration: none;">
+            <div class="profile-icon">👤</div>
+        </a>
+    </nav>
 
     <section class="hero">
         <div class="intro">
